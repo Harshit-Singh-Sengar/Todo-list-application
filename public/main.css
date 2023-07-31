@@ -1,0 +1,129 @@
+html {
+    background-color: #EDE4FF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Neue', cursive;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #A076F9;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.container {
+    height: 550px;
+    width: 400px;
+    background-color: #FFFFFF96;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin: 0px;
+    position: relative;
+}
+
+.box {
+    overflow: auto;
+    height: 72%;
+}
+
+.heading {
+    width: 400px;
+    background-color: #A076F9;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 28px;
+    border-radius: 15px 15px 0 0;
+    font-weight: bolder;
+}
+
+.inputForm {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3502b0;
+}
+
+::placeholder {
+    color: #3502b0;
+    opacity: 0.5;
+}
+
+button {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #A076F9;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #f1f1f1;
+    min-height: 70px;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+.item p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3502b0;
+    margin: 0;
+    padding: 20px;
+}
+
+footer {
+    font-size: 15px;
+}
+
+.gif1 {
+    width: 400px;
+    position: absolute;
+    top: 325px;
+    left: 300px;
+}
+
+.gif2 {
+    width: 325px;
+    position: absolute;
+    top: 325px;
+    left: 350px;
+}
+
+footer {
+    margin-top: 100px;
+}

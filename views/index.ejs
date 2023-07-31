@@ -1,0 +1,66 @@
+<%- include("partials/header.ejs") %>
+
+ <%  const date = new Date();%>
+    <%  const day = date.getDate();%>
+    <%  const month = date.getMonth();%>
+    <%  const monthNames = ["January", "February", "March","April","May", "June", "July","August","September", "October", "November","December"];%>
+    <% var m = (monthNames[month]); %>
+    <% const dday = date.getDay(); %>
+    <% const ddayNames = ["Sunday", "Monday", "Tuesday","Wednesday","Thursday","Friday","Saturady"];%>
+    <% var d = (ddayNames[dday]); %>
+    <%  let year =  new Date().getFullYear();%>
+
+
+
+
+    <div class="box" id="heading">
+    
+    <h1>
+      <%= d, %>,
+      <%= m  %>
+       <%= day %>
+    </h1>
+
+    </div>
+
+<form class="inputForm"  action="/" method="POST">
+     
+
+    
+      <div class="box">
+    
+      
+      <ul>
+         
+<li>  
+   <%  for ( i = 0; i < newListItem.length; i++) {  %>
+    <div class="item">
+      <input type="checkbox">
+      <p>
+     
+        <%= newListItem[i] %>
+      
+      </p>
+    </div>
+      <% } %>
+</li>
+</ul>
+
+
+ <input type="text" name="newItem" placeholder="New Item" autocomplete="off" required="">
+      <button type="submit" name="list" value=Sunday, July 30 >+</button>
+      </form>
+
+    
+  </div>
+
+
+  
+
+  <%- include("partials/footer.ejs") %>
+
+
+
+
+
+ 
